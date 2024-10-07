@@ -1,0 +1,16 @@
+def somaImpares():
+  x = int(input("Escreva o valor de x: "))
+  y = int(input("Escreva o valor de y: "))
+  s = 0
+  if x < y:
+    for i in range(x + 1, y):
+      if i % 2 != 0:
+        s = s + i
+  else:
+    for i in range(y + 1, x):
+      if i % 2 != 0:
+        s = s + i
+        
+  print(f"O valor da soma dos numeros impares que ficam entres {x:d} e {y:d} e: {s:d}")
+  
+somaImpares()
